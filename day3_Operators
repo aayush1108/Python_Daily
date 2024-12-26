@@ -127,3 +127,5 @@ print('4 is 2**2', 4 is 2**2 )
 print("1 is 1:", 1 is 1)
 print ("5 is not 4", 5 is not 4)
 print('Nepal' in 'Nepal is a small country')
+
+print('True is True', True==True)
