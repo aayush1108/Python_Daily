@@ -126,3 +126,4 @@ print('4 is 2**2', 4 is 2**2 )
 ##Practice Is, Is not, in and not in
 print("1 is 1:", 1 is 1)
 print ("5 is not 4", 5 is not 4)
+print('Nepal' in 'Nepal is a small country')
