@@ -104,5 +104,54 @@ if remainder == 0:
 else:
     print(f"The givennumber {number} is not even")
 
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+a = int(2.7)
+floor_division = 7//3
+if (a == floor_division):
+    print(f"Floor division of 7 by 3 is equal to {a} ")
+else:
+    {f"Floor division of 7 by 3 is not equal to {a}"}
 
+#Check if type of '10' is equal to type of 10
+type1 = type('10')
+type2= type(10)
+if(type1==type2):
+    print("Type of both the data is same")
+    print(f"Type of '10' is {type1}")
+    print(f"Type of 10 is {type2}")
+else:
+    print("Type of the data is not same")
+    print(f"Type of '10' is {type1}")
+    print(f"Type of 10 is {type2}")
 
+#Check if int('9.8') is equal to 10
+a = int(float('9.8'))
+b = 10
+if (a==b):
+    print("True. Value of a is :", a , "and value of b is : ", b)
+
+else:
+   print("False. Value of a is :", a , "and value of b is : ", b)
+    
+
+##Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hour = int(input("Enter hours: " ))
+rate = int(input ("Enter rate per hour :"))
+weekly_earning = rate * hour
+print("Your weekly earning is :", weekly_earning)
+
+##Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred year
+
+age = int(input("Enter the numbr of years you have lived :"))
+age_in_second = age * 365 * 24 * 60 * 60
+print(f"You have lived {age_in_second} seconds of you life")
+
+#Write a Python script that displays the following table
+#1 1 1 1 1
+#2 1 2 4 8
+#3 1 3 9 27
+#4 1 4 16 64
+#5 1 5 25 125
+
+for i in range (1, 6):
+    print(i , 1, i, i**2, i**3, sep="\t")
