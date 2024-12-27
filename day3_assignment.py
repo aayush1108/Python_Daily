@@ -47,6 +47,57 @@ print(f"The slope is : {slope}")
 print(f"X intercept is : {x_intercept}")
 print(f"Y intercept is : {y_intercept}")
 
+##Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+
+import math
+
+x2,x1 = 6, 2
+y2,y1 = 10, 2
+slope1  = (y2-y1)/(x2-x1)
+distance = math.sqrt(x2-x1)**2 + (y2-y1)**2
+print("The slope of the given equation is :", slope)
+print(f"The distance between these two points is : {distance}")
+
+##Compare the slopes in tasks 8 and 9.
+if slope == slope1:
+    print("The slopes from 8 and 9 are equal")
+else:
+    print("The slopes are not equal")
+
+
+#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+
+print("Given equation is y = x^2 + 6x + 9")
+for x in range(-10, 11):
+    y = x**2 + 6*x + 9
+    print(f"For {x} the value of y is {y}")
+    if y == 0:
+        print(f"The value of y  is 0 at x = {x}")
+
+
+##Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+
+len('python') > len('dragon')
+
+      
+##Use and operator to check if 'on' is found in both 'python' and 'dragon'
+
+print("Check on in python : ", ('on' in 'python') and ('on' in 'dragon'))
+
+##I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+
+print("Checking Jargon in the given sentence", 'jargon' in 'I hope this course is not full of jargon')
+
+##There is no 'on' in both dragon and python
+print("Checking no in  both dragon and python", ('no' in 'dragon') and ('no' in 'python'))
+
+#Find the length of the text python and convert the value to float and convert it to string
+length = len('python')
+print("The length in the float is : ", float(length))
+print("The length in the string is :" , str(length))
+
+
+
 
 
 
