@@ -92,13 +92,17 @@ print("Checking Jargon in the given sentence", 'jargon' in 'I hope this course i
 print("Checking no in  both dragon and python", ('no' in 'dragon') and ('no' in 'python'))
 
 #Find the length of the text python and convert the value to float and convert it to string
-length = len('python')
-print("The length in the float is : ", float(length))
-print("The length in the string is :" , str(length))
+print("The length in the float is :", float(len('python'))) 
+print("The length in the string is :", str(len('python')))
 
+#Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
 
-
-
+number = int(input("Enter the number :"))
+remainder = number % 2
+if remainder == 0:
+    print(f"Given number {number} is even")
+else:
+    print(f"The givennumber {number} is not even")
 
 
 
